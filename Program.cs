@@ -10,6 +10,11 @@ namespace szamonkeres1
     {
         static void Main(string[] args)
         {
+            int pozitiv = 0;
+            int negativ = 0;
+            int szam;
+
+
         }
     }
 }
