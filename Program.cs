@@ -20,7 +20,25 @@ namespace szamonkeres1
             {
                 Console.Write($"Add meg a {i}. számot: ");
                 if (int.TryParse(Console.ReadLine(), out szam))
+                {
+                    if (szam > 0)
+                    {
+                        pozitiv += szam;
+                    }
+                    else if (szam < 0)
+                    {
+                        negativ += szam;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Érvénytelen szám, kérlek próbáld újra!");
+                    i--;
+                }
+            }
 
+            Console.WriteLine($"\nA pozitív számok összege: {pozitiv}");
+            Console.WriteLine($"A negatív számok összege: {negativ}");
 
         }
     }
